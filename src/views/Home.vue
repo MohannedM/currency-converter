@@ -5,7 +5,7 @@
         <v-flex xs12 sm6 class="pa-1">
           <v-layout>
             <v-flex xs11>
-           <v-text-field white label="Purchase price" :value="items.price">Title</v-text-field>
+           <v-text-field type="number" white label="Purchase price" :value="items.price">Title</v-text-field>
 
             </v-flex>
                   <v-divider
@@ -21,15 +21,15 @@
 
         </v-flex>
         <v-flex xs12 sm4 class="pa-1 mx-2">
-          <v-text-field label="Plot size" white :value="items.plotSize">Title</v-text-field>
+          <v-text-field type="number" label="Plot size" white :value="items.plotSize" suffix="m2"></v-text-field>
         </v-flex>
       </v-layout>
       <v-layout row class="my-2 justify-space-between">
         <v-flex xs12 sm4 class="pa-1 mx-2">
-          <v-text-field label="Years of construction" white :value="items.yearOfConstruction">Title</v-text-field>
+          <v-text-field type="number" label="Years of construction" white :value="items.yearOfConstruction"></v-text-field>
         </v-flex>
         <v-flex xs12 sm4 class="pa-1 mx-2">
-          <v-text-field label="Net rent total" white :value="items.netRentTotal">Title</v-text-field>
+          <v-text-field type="number" label="Net rent total" white :value="items.netRentTotal" suffix="$ / p.a."></v-text-field>
         </v-flex>
       </v-layout>
       </v-form>
